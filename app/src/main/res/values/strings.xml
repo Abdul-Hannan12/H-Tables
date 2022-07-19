@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">H Tables</string>
+    <string name="main_text">Type in number to see Multiplicative Table</string>
+    <string name="logo">logo_of_author</string>
+    <string name="drop_down">main_drop_down_list</string>
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88B6CA"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="@dimen/dim_8"
+        android:contentDescription="@string/logo"
+        app:layout_constraintBottom_toTopOf="@+id/main_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/main_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_text"
+        android:textColor="#000000"
+        android:padding="@dimen/dim_5"
+        android:textSize="@dimen/font_size_18"
+        android:layout_marginLeft="@dimen/dim_15"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dim_128"
+        android:text="Select"
+        app:backgroundTint="#4768A5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upto"
+        app:layout_constraintVertical_bias="0.747" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="@dimen/dim_10"
+        app:layout_constraintTop_toBottomOf="@+id/main_text" >
+
+
+    <EditText
+        android:id="@+id/upto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#8BADC1"
+        android:ems="10"
+        android:hint="Multiplicative Table upto"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:layout_margin="@dimen/dim_10"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#8BADC1"
+        android:ems="10"
+        android:layout_margin="@dimen/dim_10"
+        android:hint="Enter The Number"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@+id/main_text" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
